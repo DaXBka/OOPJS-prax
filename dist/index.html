@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <form class="form">
+            <div class="form__name">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" name="user-name" class="name input">
+            </div>
+            <div class="form__surname">
+                <label for="surname">Фамилия</label>
+                <input type="text" id="surname" name="user-surname" class="surname input">
+            </div>
+            <div class="form__age">
+                <label for="age">Возраст</label>
+                <input type="text" id="age" name="user-age" class="age input">
+            </div>
+            <div class="form__job">
+                <label for="job">Должность</label>
+                <select class="job" id="job" name="user-job">
+                    <option value="">Выберите должность</option>
+                    <option value="FE">Frontend Developer</option>
+                    <option value="BE">Backend Developer</option>
+                </select>
+            </div>
+            <div class="form__salary">
+                <label for="salary">Зарплата</label>
+                <input type="number" id="salary" name="user-salary" class="salary input">
+            </div>
+            <div class="form__language">
+                <label for="language">Язык программирования</label>
+                <input type="text" name="user-language" id="language" class="language input">
+            </div>
+            <div class="form__checkbox">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">Есть дети</label>
+            </div>
+            <button type="submit" class="btn">Добавить</button>
+        </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Возраст</th>
+                    <th>Дети</th>
+                    <th>Должность</th>
+                    <th>Зарплата</th>
+                    <th>Язык</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
