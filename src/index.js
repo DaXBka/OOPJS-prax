@@ -6,7 +6,7 @@ const checkbox = document.getElementById('checkbox');
 const select = document.getElementById('job');
 const table = document.querySelector('table');
 
-const users = JSON.parse(localStorage.users) || [];
+const users = localStorage.users ? JSON.parse(localStorage.users) : [];
 
 const removeRow = id => {
     users.splice(id, 1);
